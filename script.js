@@ -1,7 +1,7 @@
 var  op1,op2,ans,operator1;
 function clear1()
 {
-    console.log("sunil");
+    console.log("sunilkumarmaurya");
     var answer=document.querySelector('.answer');
     var value=answer.innerHTML;
     value=value.slice(0,value.length-1);
