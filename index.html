@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="ima.png" type="image/x-icon">
+    <title>calculator</title>
+    <style>
+            .answer:hover
+            {
+                background-color:white !important;
+                color: black !important;
+              
+            }
+            .answer
+            {
+                text-align: right !important;
+            }
+            .division,.multiply,.minus,.plus,.equal
+{
+    background-color: rgba(252, 2, 2, 0.932) !important;
+}
+    </style>
+</head>
+<body>
+   
+    <div class="container">
+        <div class="name">
+                
+                        Calculator
+                    
+
+        </div>
+    <div class="answer" style="background-color: white">
+
+    </div>
+    <div class="AC" onclick="clear1()" onkeypress="clear1()">DEL</div>
+    
+    <div class="plusminus" onclick="changesign()">+/-</div>
+    <div class="modulo" onclick="operation('%')">%</div>
+    <div class="division" onclick="operation('/')">/</div>
+    <div class="seven" onclick="addtext(7)">7</div>
+    <div class="eight" onclick="addtext(8)">8</div>
+    <div class="nine" onclick="addtext(9)">9</div>
+   <div class="multiply" onclick="operation('*')">*</div>
+<div class="four" onclick="addtext(4)">4</div>
+<div class="five" onclick="addtext(5)">5</div>
+<div class="six" onclick="addtext(6)">6</div>
+<div class="minus" onclick="operation('-')">-</div>
+<div class="one" onclick="addtext(1)">1</div>
+<div class="two" onclick="addtext(2)">2</div>
+<div class="three" onclick="addtext(3)">3</div>
+<div class="plus" onclick="operation('+')">+</div>
+<div class="zero" onclick="addtext(0)">0</div>
+<div class="decimal" onclick="addtext('.')">.</div>
+<div class="equal" onclick="calculate()">=</div>
+
+
+
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

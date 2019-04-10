@@ -1,0 +1,53 @@
+
+.container
+{
+    width: 50%;
+    height: 500px;
+    display: grid;
+    grid-template: repeat(7,1fr)/repeat(4,1fr);
+    margin: auto;
+    grid-gap: 4px;
+    text-align: center;
+    font-weight: 600;
+    /* line-height: 100px; */
+    
+    font-size: 2rem;
+    background: rgb(224, 220, 220);
+
+}
+
+.container>div
+{
+    padding: 20px;
+    border:1px double black;
+    border-style: outset;
+    background-color: rgb(104, 101, 105);
+    border-radius: 10px;
+}
+.container>div:hover
+{
+    background-color: rgb(0, 0, 0) ;
+    color: white;
+}
+
+.answer
+{
+    grid-column: 1/-1;
+    height: 30px;;
+
+}
+
+.zero
+{
+    grid-column: 1/3;
+}
+
+.name
+{
+    grid-column: 1/-1;
+    text-align: center;
+    font-size: 4rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(224, 224, 240);
+    background-color: black !important;
+}
